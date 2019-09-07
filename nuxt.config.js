@@ -5,7 +5,7 @@ export default {
   ** Headers of the page
   */
   head: {
-    title:  '黑马最大的旅游网站',
+    title:  '闲云旅游网',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -31,7 +31,11 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/element-ui'
+    '@/plugins/element-ui',
+     // axios的拦截插件
+     '@/plugins/axios',
+     //  本地存储的插件
+     { src: '@/plugins/localStorage.js', ssr: false }
   ],
   /*
   ** Nuxt.js dev-modules
